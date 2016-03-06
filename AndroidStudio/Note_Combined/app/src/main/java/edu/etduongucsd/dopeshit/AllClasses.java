@@ -9,10 +9,8 @@ package edu.etduongucsd.dopeshit;
         import android.support.v7.app.AppCompatActivity;
         import android.support.v7.widget.Toolbar;
         import android.view.View;
-        import android.widget.AdapterView;
         import android.widget.ExpandableListView;
         import android.widget.SearchView;
-        import android.widget.Toast;
 
         import java.util.ArrayList;
 
@@ -75,6 +73,7 @@ public class AllClasses extends AppCompatActivity implements SearchView.OnQueryT
         myList = (ExpandableListView) findViewById(R.id.allClassesExpList);
         listAdapter = new MyListAdapter(AllClasses.this, courseList);
         myList.setAdapter(listAdapter);
+<<<<<<< HEAD
         /*myList.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
                     @Override
@@ -89,6 +88,8 @@ public class AllClasses extends AppCompatActivity implements SearchView.OnQueryT
                     }
                 }
         );*/
+=======
+>>>>>>> 502e884edcf24b11b67208a304cc017ab8e604f3
     }
 
     /* To display the classes we have to first create the a ClassInfo object using
