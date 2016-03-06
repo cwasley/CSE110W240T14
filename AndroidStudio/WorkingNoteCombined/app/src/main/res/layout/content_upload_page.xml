@@ -161,4 +161,31 @@
         android:layout_alignLeft="@+id/noteSelButton"
         android:layout_alignStart="@+id/noteSelButton" />
 
+    <ImageButton
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:id="@+id/xone"
+        android:src="@mipmap/ic_clear"
+        android:layout_alignTop="@+id/imageSlot1"
+        android:layout_alignRight="@+id/imageSlot1"
+        android:layout_alignEnd="@+id/imageSlot1" />
+
+    <ImageButton
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:id="@+id/xtwo"
+        android:src="@mipmap/ic_clear"
+        android:layout_alignTop="@+id/imageSlot2"
+        android:layout_alignRight="@+id/imageSlot2"
+        android:layout_alignEnd="@+id/imageSlot2" />
+
+    <ImageButton
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:id="@+id/xthree"
+        android:src="@mipmap/ic_clear"
+        android:layout_alignTop="@+id/imageSlot3"
+        android:layout_alignRight="@+id/imageSlot3"
+        android:layout_alignEnd="@+id/imageSlot3" />
+
 </RelativeLayout>

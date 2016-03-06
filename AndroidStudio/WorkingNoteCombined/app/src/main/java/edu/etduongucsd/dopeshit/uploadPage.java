@@ -34,16 +34,10 @@ import java.util.List;
 //Upload page
 public class uploadPage extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
-    Spinner classSpin;
-    Spinner profSpin;
-    Spinner weekSpin;
-    Spinner lecNumSpin;
-    private Button upload;
-    private Button moreButton;
-    private Button finalUpload;
-    private ImageButton imageSlot1;
-    private ImageButton imageSlot2;
-    private ImageButton imageSlot3;
+    Spinner classSpin, profSpin, weekSpin, lecNumSpin;
+    private Button upload, moreButton, finalUpload;
+    private ImageButton imageSlot1, imageSlot2, imageSlot3;
+    private ImageButton xOne, xTwo, xThree;
     private final static int SELECT_PHOTO = 12345;
     private ArrayList<Bitmap> bmapArray = new ArrayList<Bitmap>();
     private int numPictures = 0;
@@ -64,10 +58,16 @@ public class uploadPage extends AppCompatActivity implements AdapterView.OnItemS
         imageSlot2 = (ImageButton) findViewById(R.id.imageSlot2);
         imageSlot3 = (ImageButton) findViewById(R.id.imageSlot3);
         finalUpload = (Button) findViewById(R.id.final_upload);
+        xOne = (ImageButton) findViewById(R.id.xone);
+        xTwo = (ImageButton) findViewById(R.id.xtwo);
+        xThree = (ImageButton) findViewById(R.id.xthree);
         moreButton.setVisibility(View.INVISIBLE);
         imageSlot1.setVisibility(View.INVISIBLE);
         imageSlot2.setVisibility(View.INVISIBLE);
         imageSlot3.setVisibility(View.INVISIBLE);
+        xOne.setVisibility(View.INVISIBLE);
+        xTwo.setVisibility(View.INVISIBLE);
+        xThree.setVisibility(View.INVISIBLE);
         finalUpload.setVisibility(View.INVISIBLE);
 
         moreButton.setEnabled(true);
@@ -208,14 +208,17 @@ public class uploadPage extends AppCompatActivity implements AdapterView.OnItemS
             if (numPictures == 1) {
                 imageSlot1.setImageBitmap(bitmap);
                 imageSlot1.setVisibility(View.VISIBLE);
+                xOne.setVisibility(View.VISIBLE);
             }
             else if (numPictures == 2) {
                 imageSlot2.setImageBitmap(bitmap);
                 imageSlot2.setVisibility(View.VISIBLE);
+                xTwo.setVisibility(View.VISIBLE);
             }
             else if (numPictures == 3) {
                 imageSlot3.setImageBitmap(bitmap);
                 imageSlot3.setVisibility(View.VISIBLE);
+                xThree.setVisibility(View.VISIBLE);
             }
             else {
                 int morePictures = numPictures - 3;
